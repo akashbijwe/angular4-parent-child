@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  @Input() childData;
+  dataFromChild: any;
+
+  getChildData(data){
+    console.log("child data:", data);
+    this.dataFromChild = data;
+  }
+
 }
