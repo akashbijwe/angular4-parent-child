@@ -10,10 +10,17 @@ export class AppComponent {
 
   @Input() childData;
   dataFromChild: any;
+  dataFromParent: any;
 
   getChildData(data){
     console.log("child data:", data);
     this.dataFromChild = data;
   }
 
+  sendDataToChild(){
+    this.dataFromParent = {
+      username: "Akash Bijwe",
+      useremail: "mr.akashbijwe@gmail.com"
+    };
+  }
 }

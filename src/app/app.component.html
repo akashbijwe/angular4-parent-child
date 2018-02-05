@@ -4,19 +4,23 @@
   </div>
 </nav>
 <div class="container">
-  <app-child class="row" (childData)="getChildData($event)"></app-child>
-
+  <br />
+  <h4>Parent Component</h4>
+  <button type="button" (click)="sendDataToChild()" class="btn btn-primary">Send Data To Child</button>
+  <br />
   <div *ngIf="dataFromChild" class="col-md-6">
     <br /><br />
     <h4>Data From Child</h4>
-     <br />
     <div class="card">
       <div class="card-body">
-        <h5 class="card-title">Data From Child</h5><hr />
-        <p class="card-text">User Name: {{dataFromChild.username}}</p>
-        <p class="card-text">User Email: {{dataFromChild.useremail}}</p>
+        <p class="card-text"><b>User Name:</b> {{dataFromChild.username}}</p>
+        <p class="card-text"><b>User Email:</b> {{dataFromChild.useremail}}</p>
       </div>
     </div>
   </div>
+  <hr />
+  <app-child class="row" (childData)="getChildData($event)" [dataFromParent]="dataFromParent"></app-child>
+
+
 
 </div>

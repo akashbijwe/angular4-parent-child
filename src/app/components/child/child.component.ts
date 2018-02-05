@@ -10,6 +10,7 @@ export class ChildComponent implements OnInit {
   constructor() { }
 
   @Output() childData = new EventEmitter();
+  @Input() dataFromParent;
 
   ngOnInit() {
   }
