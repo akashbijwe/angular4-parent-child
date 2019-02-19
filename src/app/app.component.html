@@ -1,26 +1,26 @@
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-dark bg-dark test">
   <div class="container">
     <a class="navbar-brand" href="javascript:void(0)">Parent-Child</a>
   </div>
-</nav>
+</nav> <span>test</span>
 <div class="container">
   <br />
   <h4>Parent Component</h4>
   <button type="button" (click)="sendDataToChild()" class="btn btn-primary">Send Data To Child</button>
-  <br />
+  <br /><span>test</span>
   <div *ngIf="dataFromChild" class="col-md-6">
     <br /><br />
     <h4>Data From Child</h4>
     <div class="card">
-      <div class="card-body">
+      <div class="card-body"><span>test</span>
         <p class="card-text"><b>User Name:</b> {{dataFromChild.username}}</p>
         <p class="card-text"><b>User Email:</b> {{dataFromChild.useremail}}</p>
       </div>
     </div>
-  </div>
+  </div><span>test</span>
   <hr />
   <app-child class="row" (childData)="getChildData($event)" [dataFromParent]="dataFromParent"></app-child>
 
 
-
+<span>test</span>
 </div>
