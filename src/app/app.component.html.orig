@@ -1,0 +1,52 @@
+<<<<<<< HEAD
+<nav class="navbar navbar-dark bg-dark"> asdasd
+  <div class="container">
+    <a class="navbar-brand" href="javascript:void(0)">Parent-Child</a>
+  </div>
+</nav> asdasd
+=======
+<nav class="navbar navbar-dark bg-dark test">
+  <div class="container">
+    <a class="navbar-brand" href="javascript:void(0)">Parent-Child</a>
+  </div>
+</nav> <span>test</span>
+>>>>>>> 01163c0cf8330095cd2d318f57123fc7c0848d12
+<div class="container">
+  <br />
+  <h4>Parent Component</h4>
+  <button type="button" (click)="sendDataToChild()" class="btn btn-primary">Send Data To Child</button>
+<<<<<<< HEAD
+  <br />asdasd
+=======
+  <br /><span>test</span>
+>>>>>>> 01163c0cf8330095cd2d318f57123fc7c0848d12
+  <div *ngIf="dataFromChild" class="col-md-6">
+    <br /><br />
+    <h4>Data From Child</h4>
+    <div class="card">
+<<<<<<< HEAD
+      <div class="card-body">asdasd
+        <p class="card-text"><b>User Name:</b> {{dataFromChild.username}}</p>
+        <p class="card-text"><b>User Email:</b> {{dataFromChild.useremail}}</p>
+      </div>
+    </div>asdasd
+  </div>
+  <hr />
+  <app-child class="row" (childData)="getChildData($event)" [dataFromParent]="dataFromParent"></app-child>
+
+asdasd
+
+=======
+      <div class="card-body"><span>test</span>
+        <p class="card-text"><b>User Name:</b> {{dataFromChild.username}}</p>
+        <p class="card-text"><b>User Email:</b> {{dataFromChild.useremail}}</p>
+      </div>
+    </div>
+  </div><span>test</span>
+  <hr />
+  <app-child class="row" (childData)="getChildData($event)" [dataFromParent]="dataFromParent"></app-child>
+
+
+<span>test</span>
+>>>>>>> 01163c0cf8330095cd2d318f57123fc7c0848d12
+</div>
